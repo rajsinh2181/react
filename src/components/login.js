@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react"
 import { Form, Button, Card, Alert } from "react-bootstrap"
-import { useAuth } from "../contexts/AuthContext"
+import { useAuth } from "../context/AuthContext"
 import { Link, useHistory } from "react-router-dom"
 
 export default function Login() {
@@ -51,7 +51,7 @@ export default function Login() {
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        Need an account? <Link to="/signup">Sign Up</Link>
+        Need an account? <Link to="/">Sign Up</Link>
       </div>
     </>
   )
